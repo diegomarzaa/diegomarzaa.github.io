@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>  <!-- caracteres especiales -->
+    <meta name="description" content="Esta página es una prueba"/>     <!-- Descripción de la página -->
+    <meta name="robots" content="index, follow"/>  <!-- Robots de búsquedas específicos, autorizamos que nuestra página se posicionen en los buscadores -->
+    <meta name="author" content="Diego"/>
+    <title>Página de prueba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!-- Para que la web se adapte a cualquier dispositivo, escalando la fuente para moviles -->
+    <link rel="stylesheet" href="css/style.css"/>  <!-- Enlazamos el archivo de estilos -->
+</head>
+<body>
+    <header>
+        <h1>Encabezado</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <figure>    <!-- Encapsular imagenes en proyecto -->
+                <img
+                    src="./Imagenes/pexels-maria-orlova-4946956.jpg/"
+                    alt="Imagen guachi"
+                />
+                <figcaption>Imagen guachi</figcaption>
+            </figure>
+        </section>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <a href="https://www.google.com">Esto es un enlace a google</a>
+        <button id="alert-button">Click me for a web alert</button>
+
+        <script>
+            const button = document.getElementById("alert-button");
+            button.addEventListener("click", () => {
+                alert("You clicked the button!");
+            });
+        </script>
+        <a href="curriculum.pdf" download>Download a file</a>
+        <hr/>
+        <form action="index.html" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="2"></textarea>
+            <input type="submit" value="Send" />
+
+
+    </main>
+    <hr/>
+    <h1>Esto es un título</h1>
+    <p>Esto es un párrafo</p>
+    <footer>
+        <p>Esto es un pie de página</p>
+    </footer>
+</body>
+</html>
