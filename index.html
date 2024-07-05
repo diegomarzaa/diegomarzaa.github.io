@@ -1,42 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diego Marzá Fuertes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Marzá Fuertes - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="menu-icon">☰</div>
-    <div class="background-image"></div>
-    <div class="content">
-        <div class="name">Diego Marzá Fuertes</div>
-        <div class="subtitle">Robotics Intelligence Student</div>
-        
-        <!-- Crea un botón de descarga con un icono -->
-        <a href="Imagenes/diego_foto.jpg" download class="btn">
-            <i class="fa fa-download"></i>
-            Descargar Currículum
-        </a>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <div class="portfolio">Mi Portafolio</div>
-        <div class="portfolio-images">
-            <div class="portfolio-image"></div>
-            <div class="portfolio-image"></div>
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Diego Marzá Fuertes</h1>
+                        <h2>Estudiante de Inteligencia Robótica</h2>
+                        <p>Innovador apasionado en el campo de la robótica y la IA, buscando constantemente nuevos desafíos para expandir los límites de la tecnología.</p>
+                        <a href="#contact" class="cta-button">Contáctame</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="imagenes/diego_foto.jpg" alt="Diego Marzá Fuertes" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <p>Soy un apasionado estudiante de Inteligencia Robótica con un fuerte interés en la intersección entre la inteligencia artificial y la robótica. Mi objetivo es desarrollar sistemas robóticos inteligentes que puedan mejorar la vida de las personas y revolucionar diversas industrias.</p>
+                        <p>A lo largo de mi formación académica, he adquirido habilidades en programación, aprendizaje automático, visión por computador y diseño de sistemas robóticos. Estoy constantemente buscando nuevos desafíos y oportunidades para aplicar mis conocimientos en proyectos innovadores.</p>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <img src="imagenes/trabajando.jpg" alt="Diego en el laboratorio de robótica">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="skills-container">
+                    <div class="skill-category animate-on-scroll">
+                        <h3>Programación</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="90%">
+                                <span class="skill-name">Python</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="80%">
+                                <span class="skill-name">C++</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="75%">
+                                <span class="skill-name">ROS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category animate-on-scroll">
+                        <h3>Inteligencia Artificial</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="85%">
+                                <span class="skill-name">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="80%">
+                                <span class="skill-name">Visión por Computador</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-percentage="70%">
+                                <span class="skill-name">Procesamiento de Lenguaje Natural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="robotics">Robótica</button>
+                    <button class="filter-btn" data-filter="ai">IA</button>
+                    <button class="filter-btn" data-filter="vision">Visión</button>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card robotics animate-on-scroll">
+                        <h3>Proyecto 1</h3>
+                        <p>Breve descripción del proyecto 1.</p>
+                        <a href="#" class="project-link">Ver más</a>
+                    </div>
+                    <div class="project-card ai animate-on-scroll">
+                        <h3>Proyecto 2</h3>
+                        <p>Breve descripción del proyecto 2.</p>
+                        <a href="#" class="project-link">Ver más</a>
+                    </div>
+                    <div class="project-card vision animate-on-scroll">
+                        <h3>Proyecto 3</h3>
+                        <p>Breve descripción del proyecto 3.</p>
+                        <a href="#" class="project-link">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="cv">
+            <div class="container">
+                <h2>Curriculum Vitae</h2>
+                <p>Explora mi trayectoria académica y profesional en detalle:</p>
+                <a href="DiegoMarzáFuertesCV.pdf"download-btn">Descargar CV</a>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>¿Interesado en colaborar o saber más sobre mi trabajo? ¡No dudes en contactarme!</p>
+                        <ul class="social-links">
+                            <li><a href="linkedin.com/in/diegomarza" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="mailto:diegomarzafuertes@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                            <li><a href="https://diegomarzaa.github.io/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        </ul>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Diego Marzá Fuertes. Todos los derechos reservados.</p>
         </div>
-        <div class="contact">Contacto</div>
-        <div class="contact-form">
-            <form action="https://formsubmit.co/diegomarzafuertes@gmail.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="name" placeholder="Nombre" />
-                <input type="email" name="email" placeholder="Email" required />
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
